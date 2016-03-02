@@ -1,0 +1,4 @@
+*.ts
+*.map
+src/
+tsconfig.json

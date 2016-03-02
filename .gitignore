@@ -1,0 +1,10 @@
+built/
+built-test/
+node_modules/
+typings/browser
+typings/browser.d.ts
+typings/main.d.ts
+*.map
+*.js
+*.swp
+*.log

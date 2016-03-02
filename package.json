@@ -1,0 +1,41 @@
+{
+  "name": "github-ts",
+  "version": "0.1.0",
+  "description": "GitHub API wrapper for JavaScript",
+  "main": "built/index.js",
+  "scripts": {
+    "test": "mocha built-test",
+    "build": "tsc -v && tsc",
+    "postbuild": "babel src --out-dir built -s && babel test --out-dir built-test -s",
+    "prepublish": "npm run build && npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seikho/github-ts.git"
+  },
+  "keywords": [
+    "github",
+    "web",
+    "api",
+    "javascript",
+    "typescript",
+    "wrapper"
+  ],
+  "author": "Carl Winkler",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/seikho/github-ts/issues"
+  },
+  "homepage": "https://github.com/seikho/github-ts#readme",
+  "devDependencies": {
+    "babel-cli": "^6.6.0",
+    "babel-preset-es2015": "^6.6.0",
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5",
+    "typescript": "^1.8.7",
+    "webpack": "^1.12.14"
+  },
+  "dependencies": {
+    "request": "^2.69.0"
+  }
+}
